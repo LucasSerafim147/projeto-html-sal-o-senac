@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Logo SENAC Beauty Hub */
+.logo-beauty-hub {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 2; /* Mantém a logo na frente de outros elementos */
+}
+
+.logo-beauty-hub img {
+  width: 200px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+}
+
+/* Imagem das mulheres */
+.girls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1; /* Garantia de que fique atrás de textos ou elementos principais */
+}
+
+.girls img {
+  max-width: 700px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+}
+
+/* Logo SENAC */
+.senac-logo {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  z-index: 2; /* Mantém a logo na frente */
+}
+
+.senac-logo img {
+  width: 150px; /* Ajuste conforme necessário */
+  height: auto;
+}
+
+/* Texto adicional */
+#alo {
+  position: absolute; /* Impede o texto de interferir nas imagens */
+  top: 30%;
+  left: 70%;
+  transform: translate(-50%, -50%); /* Centraliza o texto na página */
+  z-index: 3; /* Texto acima de todos os outros elementos */
+  text-align: justify;
+  font-size: 64px;
+  color: black;
+}
+
+#fundo{
+
+}
