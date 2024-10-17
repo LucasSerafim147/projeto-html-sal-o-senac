@@ -57,20 +57,74 @@ body {
 .senac-logo img {
   width: 150px; /* Ajuste conforme necessário */
   height: auto;
+  
 }
 
-/* Texto adicional */
-#alo {
-  position: absolute; /* Impede o texto de interferir nas imagens */
-  top: 30%;
-  left: 70%;
+
+  
+
+body {
+  background-image: url("imagens/tela de fundo.png")
+}
+
+h1{position: absolute; /* Impede o texto de interferir nas imagens */
+  top: 50%;
+  left: 60%;
   transform: translate(-50%, -50%); /* Centraliza o texto na página */
   z-index: 3; /* Texto acima de todos os outros elementos */
-  text-align: justify;
-  font-size: 64px;
+  font-size: 55px;
+  text-align: right
   color: black;
+  padding-right: 0%
+  
+}
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  position: relative; /* Para que os filhos com position absolute se posicionem em relação a este elemento */
+}
+/* Estilizando os botões */
+.button-container {
+  position: absolute;
+  top: 65%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: row; /* Alinhando os botões em uma linha */
+  justify-content: center;
+  gap: 20px; /* Espaço entre os botões */
 }
 
-#fundo{
+.button {
+  background-color: #FF7A00; /* Cor laranja para o botão agendar */
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 25px;
+  margin: 10px 0;
+  cursor: pointer;
+  font-family: 'Commissioner', sans-serif;
+}
 
+.button.conta {
+  background-color: white; /* Botão com fundo branco */
+  color: #FF7A00; /* Texto laranja */
+  border: 2px solid #FF7A00; /* Borda laranja */
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.cadastre-se {
+  text-decoration: none;
+  color: #FF7A00;
+  margin-top: 10px;
+}
+
+.cadastre-se:hover {
+  text-decoration: underline;
 }
