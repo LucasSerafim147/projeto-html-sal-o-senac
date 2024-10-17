@@ -6,88 +6,94 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #fff;
-  background-image: url("imagens/fundo.png"); /* Imagem de fundo com ícones */
+  background: url("imagens/tela de fundo.png") no-repeat center center fixed;
   background-size: cover;
-  background-repeat: no-repeat;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .container {
-  width: 100%;
-  max-width: 1200px;
   text-align: center;
-  position: relative;
+  padding: 20px;
 }
 
-.logo-beauty-hub {
-  position: absolute;
-  top: 10px;
-  left: 20px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-.senac-logo {
-  position: absolute;
-  top: 10px;
-  right: 20px;
+.logo-esquerda {
+  width: 150px;
+}
+
+.logo-direita {
+  width: 150px;
+  height: 100px
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 24px;
   margin-bottom: 40px;
-  color: #333;
 }
 
-.service-buttons {
+.botoes-container {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
-.column {
+.coluna {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
 }
 
-.service-button {
-  background-color: #005bbb;
+button {
+  width: 320px;
+  height: 57px;
+  background-color: #014A8E;
   color: white;
   border: none;
-  padding: 15px 40px;
-  font-size: 18px;
-  border-radius: 25px;
+  border-radius: 30px;
+  margin: 10px 0;
+  font-size: 16px;
   cursor: pointer;
 }
 
-.service-button:hover {
-  background-color: #003f7d;
+button:hover {
+  background-color: #0041a1;
 }
 
-.other-service {
-  margin-top: 30px;
+/* Estilo para o botão de "Outros Serviços" */
+.outros-servicos-container {
+  margin-top: 50px;
 }
 
-.back-button {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-}
-
-.back {
-  background-color: #FF7A00;
+.outros-servicos {
+  width: 320px;
+  height: 57px;
+  background-color: #014A8E;
   color: white;
   border: none;
-  padding: 10px 30px;
-  font-size: 18px;
-  border-radius: 25px;
+  border-radius: 30px;
+  font-size: 16px;
   cursor: pointer;
 }
 
-.back:hover {
-  opacity: 0.9;
+.outros-servicos:hover {
+  background-color: #0041a1;
+}
+
+.voltar {
+  background-color: #ff8c66;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.voltar:hover {
+  background-color: #e67350;
 }
