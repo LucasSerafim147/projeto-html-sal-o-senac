@@ -69,7 +69,7 @@ body {
 
 h1{position: absolute; /* Impede o texto de interferir nas imagens */
   top: 50%;
-  left: 60%;
+  left: 70%;
   transform: translate(-50%, -50%); /* Centraliza o texto na página */
   z-index: 3; /* Texto acima de todos os outros elementos */
   font-size: 55px;
@@ -84,17 +84,17 @@ body {
   font-family: Arial, sans-serif;
   position: relative; /* Para que os filhos com position absolute se posicionem em relação a este elemento */
 }
-/* Estilizando os botões */
+
 .button-container {
   position: absolute;
-  top: 65%;
-  left: 60%;
+  top: 70%;
+  left: 70%;
   transform: translate(-50%, -50%);
   z-index: 3;
   display: flex;
-  flex-direction: row; /* Alinhando os botões em uma linha */
-  justify-content: center;
-  gap: 20px; /* Espaço entre os botões */
+  flex-direction: rows; /* Alinha os botões e o link em uma coluna */
+  align-items: center;
+  gap: 20px; /* Espaço entre os botões e o link */
 }
 
 .button {
@@ -104,7 +104,6 @@ body {
   padding: 15px 30px;
   font-size: 18px;
   border-radius: 25px;
-  margin: 10px 0;
   cursor: pointer;
   font-family: 'Commissioner', sans-serif;
 }
@@ -119,12 +118,19 @@ body {
   opacity: 0.9;
 }
 
+/* Estilizando o link "ou cadastre-se" */
 .cadastre-se {
   text-decoration: none;
   color: #FF7A00;
-  margin-top: 10px;
+  font-size: 16px;
+  margin-top: 5px; /* Espaço entre o botão "Acessar minha conta" e o link */
 }
 
 .cadastre-se:hover {
   text-decoration: underline;
+}
+.button-with-link{
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre o botão e o link */
 }
