@@ -10,19 +10,19 @@ body, html {
     background-image: url(imagens/tela\ de\ fundo.png);
 }
 
-/* Container principal com a imagem de fundo */
+
 .container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    background-image: url('background-image.png'); /* Substitua pela sua imagem de fundo */
+    
     background-size: cover;
     background-position: center;
 }
 
-/* Cabeçalho com as logos */
+
 .header {
     width: 100%;
     display: flex;
@@ -32,78 +32,82 @@ body, html {
     border-bottom: 2px solid #ccc;
 }
 
-.logo-left img {
+.logo-sb img {
+    height: 50px;
+    width: 50px;
+    
+}
+
+.logo-senac img {
     height: 50px;
 }
 
-.logo-right img {
-    height: 50px;
-}
 
-/* Seção de Serviços */
-.service-section {
-    background-color: rgba(255, 255, 255, 0.8); /* Transparência no fundo */
+.servicos {
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 20px;
     border-radius: 10px;
     width: 60%;
     text-align: left;
 }
 
-.service-section h1 {
+.servicos h1 {
     font-size: 24px;
     color: #333;
 }
 
-.service-section h2 {
+.servicos h2 {
     font-size: 18px;
     color: #666;
     margin-top: 5px;
 }
 
-/* Lista de Serviços */
-.services-list ul {
+
+.servicos-lista ul {
     list-style: none;
     padding-left: 0;
+    background-image: url(imagens/Ellipse\ 3.png);
 }
 
-.services-list li {
+.servicos-lista li {
     display: flex;
-    justify-content: flex-start; /* Alinha os itens à esquerda */
-    align-items: center; /* Alinha verticalmente os checkboxes e o texto */
+    justify-content: flex-start; 
+    align-items: center; 
     margin: 10px 0;
     color: #333;
+    
 }
 
-.services-list input[type="checkbox"] {
-    margin-right: 10px; /* Ajuste o espaçamento das checkboxes */
+.servicos-lista input[type="checkbox"] {
+    margin-right: 10px; 
 }
 
-.services-list span {
+.servicos-lista span {
     color: #333;
     font-weight: bold;
-    margin-left: auto; /* Move o preço para o final da linha */
-    padding-left: 20px; /* Espaçamento entre o serviço e o preço */
+    margin-left: auto; 
+    padding-left: 20px; 
 }
 
 
-/* Botões de navegação */
-.buttons {
+
+.botoes {
     display: flex;
     justify-content: space-between;
-    width: 60%;
-    margin-top: 20px;
+    width: 90%;
+    margin-top: 40px;
 }
 
-.buttons .back-button, .buttons .next-button {
+.butoes, .voltar, .botoes .proximo {
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     font-size: 16px;
     color: white;
     cursor: pointer;
-    background-color: #FFA500;
+    background-color: #CD722B;
 }
 
-.buttons .back-button:hover, .buttons .next-button:hover {
-    background-color: #FF8C00;
+.botoes .voltar:hover, .botoes .proximo:hover {
+    background-color: #CD722B;
 }
