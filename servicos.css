@@ -55,13 +55,20 @@ body, html {
 .servicos h1 {
     font-size: 24px;
     color: #333;
+    position: relative;
+    top: -40px;      
+    left: -60px;     
 }
 
 .servicos h2 {
     font-size: 18px;
     color: #666;
     margin-top: 5px;
+    position: relative;
+    top: -45px;      
+    left: -60px;     
 }
+
 
 .servicos-lista ul {
     list-style: none;
@@ -91,8 +98,11 @@ body, html {
 .botoes {
     display: flex;
     justify-content: space-between;
-    width: 90%;
-    margin-top: 40px;
+    width: 80%;
+    margin-top: 100px;
+    top: 100px;
+    position: relative;
+    ;
 }
 
 .butoes, .voltar, .botoes .proximo {
