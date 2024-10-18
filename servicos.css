@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-image: url(imagens/tela\ de\ fundo.png);
+}
+
+/* Container principal com a imagem de fundo */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-image: url('background-image.png'); /* Substitua pela sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Cabeçalho com as logos */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 2px solid #ccc;
+}
+
+.logo-left img {
+    height: 50px;
+}
+
+.logo-right img {
+    height: 50px;
+}
+
+/* Seção de Serviços */
+.service-section {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparência no fundo */
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    text-align: left;
+}
+
+.service-section h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.service-section h2 {
+    font-size: 18px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Lista de Serviços */
+.services-list ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.services-list li {
+    display: flex;
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    align-items: center; /* Alinha verticalmente os checkboxes e o texto */
+    margin: 10px 0;
+    color: #333;
+}
+
+.services-list input[type="checkbox"] {
+    margin-right: 10px; /* Ajuste o espaçamento das checkboxes */
+}
+
+.services-list span {
+    color: #333;
+    font-weight: bold;
+    margin-left: auto; /* Move o preço para o final da linha */
+    padding-left: 20px; /* Espaçamento entre o serviço e o preço */
+}
+
+
+/* Botões de navegação */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 20px;
+}
+
+.buttons .back-button, .buttons .next-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    background-color: #FFA500;
+}
+
+.buttons .back-button:hover, .buttons .next-button:hover {
+    background-color: #FF8C00;
+}
