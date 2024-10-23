@@ -1,0 +1,157 @@
+:root{
+  --corBotao:#CD722B;
+  --textoBotao:white;
+  --textoID:#014A8E;
+  --textoBemvindo:#000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+
+.logo-beauty-hub {
+  position: absolute;
+  top: 1%;
+  left: 2%;
+  z-index: 2; 
+}
+
+.logo-beauty-hub img {
+  width: 200px; 
+  height: auto;
+}
+
+
+
+.senac-logo {
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  z-index: 2; 
+}
+
+.senac-logo img {
+  width: 150px; 
+  height: auto;
+  
+}
+
+
+  
+
+body {
+  background-image: url("imagens/fundo.png");
+  
+}
+
+.titulo{
+  position: absolute; /* Impede o texto de interferir nas imagens */
+  top: 25.4%;
+  left: 23.9%;
+  transform: translate(-50%, -50%); /* Centraliza o texto na página */
+  z-index: 3; /* Texto acima de todos os outros elementos */
+  font-size: 30px;
+  text-align: right;
+  color: var(--textoBemvindo);
+  padding-right: 0%;
+}
+
+.sub-titulo{
+  color: var(--textoBemvindo);
+  position: absolute; /* Impede o texto de interferir nas imagens */
+  top: 30%;
+  left: 19.8%;
+  font-size: 22px;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  position: relative; /* Para que os filhos com position absolute se posicionem em relação a este elemento */
+}
+
+.textarea{
+  
+}
+
+#feedback-textarea{
+  position:absolute;
+  font-size: 22px;
+  border: none;
+  border-radius: 30px;
+  background-color: #D9D9D9;
+  margin:17% 0% 0% 19%;
+  padding: 20px; /* Padding geral */
+  text-align: left;
+  resize: none ;
+  opacity: 70%;
+  box-shadow:0px 4px  7px rgba(0, 0, 0, 0.25);
+  }
+
+#feedback-textarea::placeholder{
+  font-size: 22px;
+  opacity: 1; /* Para garantir que o placeholder seja bem visível */
+}
+
+#feedback-textarea:focus{
+  outline: none;
+}
+
+
+.button-feedback{
+  font-size: 27px;
+  color: var(--textoBemvindo);
+  position: absolute;
+  border-radius: 60px;
+  border: none;
+  height:50px ;
+  width: 210px;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  box-shadow:0px 4px  7px rgba(0, 0, 0, 0.25);
+}
+
+.button-feedback:hover {
+  opacity: 0.8;
+}
+
+.button-feedback p{
+  margin-left: 1.5%;
+}
+
+#button-feedback__enviar{
+  top: 76.4%;
+  left: 44.3%;
+  background-color: var(--corBotao);
+}
+
+#button-feedback__voltar{
+  top: 96%;
+  left: 6%;
+  background-color: #CD722B ;
+  opacity: 80%;
+}
+
+#button-feedback__voltar:hover{
+  opacity: 1;
+}
