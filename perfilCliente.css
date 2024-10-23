@@ -1,0 +1,172 @@
+:root{
+    --corBotao:#CD722B;
+    --textoBotao:white;
+    --textoID:#014A8E;
+    --textoBemvindo:#000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  
+  .logo-beauty-hub {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 2; 
+  }
+  
+  .logo-beauty-hub img {
+    width: 200px; 
+    height: auto;
+  }
+  
+  
+  .girls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1; 
+  }
+  
+  .girls img {
+    max-width: 700px; 
+    height: auto;
+  }
+  
+  
+  .senac-logo {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    z-index: 2; 
+  }
+  
+  .senac-logo img {
+    width: 150px; 
+    height: auto;
+    
+  }
+  
+  
+    
+  
+  body {
+    background-image: url("/img/fundo.png");
+    
+  }
+  
+  .welcome{
+    position: absolute; /* Impede o texto de interferir nas imagens */
+    top: 27%;
+    left: 69.2%;
+    transform: translate(-50%, -50%); /* Centraliza o texto na página */
+    z-index: 3; /* Texto acima de todos os outros elementos */
+    font-size: 30px;
+    text-align: right;
+    color: var(--textoBemvindo);
+    padding-right: 0%;
+  }
+  
+  .id{
+    color: var(--textoID);
+    position: absolute; /* Impede o texto de interferir nas imagens */
+    top: 29%;
+    left: 61.5%;
+    font-weight: bold;
+  }
+
+  body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    position: relative; /* Para que os filhos com position absolute se posicionem em relação a este elemento */
+  }
+  
+  .button-container {
+    position: absolute;
+    top: 58%;
+    left: 75.7%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    display: flex;
+    flex-direction: rows; /* Alinha os botões e o link em uma coluna */
+    align-items: center;
+    display: grid;
+    gap: 40px; /* Espaço entre os botões e o link */
+  }
+  
+  .button {
+    background-color:var(--corBotao) ; /* Cor laranja para o botão agendar */
+    color: var(--textoBotao);
+    border: none;
+    /* padding: 15px 90px; */
+    width: 550px;
+    height: 79px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Commissioner', sans-serif;
+    box-shadow:0px 4px  7px rgba(0, 0, 0, 0.25);
+    text-shadow:0px 4px  7px rgba(0, 0, 0, 0.25);
+}
+
+   .button:hover {
+        opacity: 0.9;
+}
+  
+  #button-sair{
+    font-size: 27px;
+    color: var(--textoBotao);
+    position: absolute;
+    top: 89%;
+    left: 87%;
+    background-color: var(--corBotao);
+    border-radius: 60px;
+    border: none;
+    height:70px ;
+    width: 130px;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    box-shadow:0px 4px  7px rgba(0, 0, 0, 0.25);
+    text-shadow:0px 4px  7px rgba(0, 0, 0, 0.25);
+  } 
+
+  #button-sair:hover {
+    opacity: 0.9;
+  }
+
+  #button-sair p{
+    margin-left: 15px;
+  }
+
+  .material-symbols-outlined{
+    display: flex;
+    font-optical-sizing: 40;
+    align-items: center;
+    color: var(--textoBotao);
+    position: absolute;
+    left: 18px;
+    bottom: 23px;
+    font-size: 140px;
+  }
+
