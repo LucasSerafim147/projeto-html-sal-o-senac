@@ -1,213 +1,230 @@
                     /* criando variaveis para as cores */
 
-:root{
-    --corBotao:#CD722B;
-    --textoBotao:white;
-    --textoID:#014A8E;
-    --textoBemvindo:#000000;
-    --corSelecionado:#1C6DB9;
-    --corInput:#E0E0E0;
-}
+                    :root{
+                        --corBotao:#CD722B;
+                        --textoBotao:white;
+                        --textoID:#014A8E;
+                        --textoBemvindo:#000000;
+                        --corSelecionado:#1C6DB9;
+                        --corInput:#E0E0E0;
+                    }
+                    
+                                        /* impondo um padrao na pagina */
+                    
+                    *{
+                        margin: 0;
+                        padding: 0;
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        box-sizing: border-box;
+                    }
+                    
+                                        /* estilizaçao do body */
+                    
+                    body{
+                        background-image: url("/imagens/tela de fundo.png");
+                        
+                    }
+                    
+                                    /* inicio do header */
+                    
+                    header{
+                        height: 22%;
+                    }
+                    
+                    hr{
+                        border: none; /* Remove a borda padrão */
+                        height: 1px; /* Define a altura da linha */
+                        background-color: #CD722B; /* Define a cor da linha */
+                    }
+                    
+                    .logo-beauty-hub{
+                        top: 1%;
+                        left: 2%;
+                    
+                    }
+                      
+                    .logo-beauty-hub img{
+                        width: 150px; 
+                        height: auto;
+                    }
+                      
+                    .senac-logo{
+                        position: absolute;
+                        top: 4%;
+                        right: 2%;
+                    }
+                    
+                    .senac-logo img{
+                        width: 100px; 
+                        height: auto;
+                        
+                    }
+                                           /* fim do header */
+                    
+                    
+                                           /* inicio do main */
+                    
+                    
+                    .container{
+                        display: flex;
+                        
+                    }
+                    
+                    .sidebar {
+                        background-color: var(--textoID);
+                        height: 798px;
+                        width: 14%;
+                    }
+                    
+                    .sidebar h2{
+                        color: var(--textoBotao);
+                        text-align: center;
+                        padding: 10% 0 10% 0;
+                    }
+                    
+                    .principal{
+                        color: var(--textoBotao) ;
+                        opacity: 80%;
+                        background-color: #1C6DB9;
+                        padding: 2% 0 2% 10%;
+                    }
+                    
+                    .sidebar .fa-calendar-days,.fa-user,.fa-bell{
+                        margin-left: 10%;
+                    }
 
-                    /* impondo um padrao na pagina */
+                    .fa-star{
+                        margin-left: 8%;
+                    }
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    box-sizing: border-box;
-}
+                    #config{
+                        background-color:#1C6DB9;
+                        border-radius: 10px;
+                        padding: 2% 0 2% 2%;
+                        margin-left: 6.3%;
+                    }
 
-                    /* estilizaçao do body */
+                    .sidebar ul{
+                        list-style: none;
+                    }
+                    
+                    .sidebar-list{
+                        margin:10% 0.5% 0 0;
+                    }
+                    
+                    .sidebar button{
+                    
+                    }
+                    
+                    .sidebar a{
+                        text-decoration: none;
+                        color: var(--textoBotao);
+                    }
 
-body{
-    background-image: url("imagens/fundo.png");
-    
-}
+                    .main{
+                        margin: 20px 0 0 0 ;
+                    }
+                     
+                    .main input{
+                        justify-content:center ;
+                        margin-left:25% ;
+                    }
+                    
+                    #titulo{
+                        margin-left: 22%;
+                    
+                    }
+                    
+                    #sub-titulo{
+                        color: var(--textoID);
+                        opacity: 60%;
+                        font-weight: bold;
+                        margin-left: 23%;
+                        margin-bottom: 10%;
+                    }
+                    
+                     #titulo,#sub-titulo{
+                        
+                    } 
+                    
+                    .container-input{
+                        display: grid  ;
+                        gap: 30px;
+                        
+                    }
+                    
+                    .input{
+                        width: 456px;
+                        height: 58px;
+                        padding:0px 5px 0px 10px;
+                        border: none;
+                        border-radius: 20px;
+                        background-color:var(--corInput) ;
+                        opacity: 80%;
+                        box-shadow:0px 4px  7px rgba(0, 0, 0, 0.25);
+                    }
 
-                /* inicio do header */
-
-header{
-    height: 22%;
-}
-
-hr{
-    border: none; /* Remove a borda padrão */
-    height: 1px; /* Define a altura da linha */
-    background-color: #CD722B; /* Define a cor da linha */
-}
-
-.logo-beauty-hub{
-    top: 1%;
-    left: 2%;
-
-}
-  
-.logo-beauty-hub img{
-    width: 150px; 
-    height: auto;
-}
-  
-.senac-logo{
-    position: absolute;
-    top: 4%;
-    right: 2%;
-}
-
-.senac-logo img{
-    width: 100px; 
-    height: auto;
-    
-}
-                       /* fim do header */
-
-
-                       /* inicio do main */
-
-
-.container{
-    display: flex;
-    
-}
-
-.sidebar {
-    background-color: var(--textoID);
-    height: 798px;
-    width: 14%;
-}
-
-.sidebar h2{
-    color: var(--textoBotao);
-    text-align: center;
-    padding: 10% 0 10% 0;
-}
-
-.sidebar p{
-    color: var(--textoBotao) ;
-    opacity: 80%;
-    background-color: #1C6DB9;
-    padding: 2% 0 2% 10%;
-}
-
-.sidebar ul{
-    
-}
-
-.sidebar-list{
-    padding:10% 0.5% 0 10%;
-}
-
-.sidebar button{
-
-}
-
-.sidebar a{
-    text-decoration: none;
-    color: var(--textoBotao);
-}
-
-.main{
-    margin: 20px 0 0 0 ;
-}
- 
-.main input{
-    justify-content:center ;
-    margin-left:25% ;
-}
-
-#titulo{
-    margin-left: 22%;
-
-}
-
-#sub-titulo{
-    color: var(--textoID);
-    opacity: 60%;
-    font-weight: bold;
-    margin-left: 23%;
-    margin-bottom: 10%;
-}
-
- #titulo,#sub-titulo{
-    
-} 
-
-.container-input{
-    display: grid  ;
-    gap: 30px;
-    
-}
-
-.input{
-    width: 456px;
-    height: 58px;
-    padding:0px 5px 0px 10px;
-    border: none;
-    border-radius: 20px;
-    background-color:var(--corInput) ;
-    opacity: 80%;
-    box-shadow:0px 4px  7px rgba(0, 0, 0, 0.25);
-}
-
-.container .button-input{
-    background-color: var(--textoID);
-    opacity: 80%;
-    font-size: 27px;
-    color: var(--textoBotao);
-    position: absolute;
-    left: 50.7%;
-    border-radius: 20px;
-    border: none;
-    height:58px ;
-    width: 210px;
-    cursor: pointer;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-    box-shadow:0px 4px  7px rgba(0, 0, 0, 0.25);
-}
-
-.button-input:hover{
-    opacity: 0.7;
-}
-
-#button-Alterar-nome{
-    top: 32.9%;
-}
-
-#button-Alterar-dataNasc{
-    top: 42.3%;
-}
-
-#button-Alterar-email{
-    top: 51.3%;
-}
-
-#button-Alterar-cpf{
-    top: 60.6%;
-}
-
-#button-Alterar-id{
-    top: 69.8%;
-}
-
-#button-Alterar-password{
-    top: 79.3%;
-}
-
-.button-Sair{
-    background-color: transparent;
-    border: none;
-    padding-top: 130%;
-    font-size: 23px;
-    text-align: center;
-    color:var(--textoBotao);
-}
-
-#poweroff-icon{
-    padding-left: 30%;
-}
-
-.fa-solid{
-    color: var(--textoBotao);
-    font-size: 23px;
-}
+                    .container .button-input{
+                        background-color: var(--textoID);
+                        opacity: 80%;
+                        font-size: 27px;
+                        color: var(--textoBotao);
+                        position: absolute;
+                        left: 50.7%;
+                        border-radius: 20px;
+                        border: none;
+                        height:58px ;
+                        width: 210px;
+                        cursor: pointer;
+                        transform: translate(-50%, -50%);
+                        z-index: 3;
+                        box-shadow:0px 4px  7px rgba(0, 0, 0, 0.25);
+                    }
+                    
+                    .button-input:hover{
+                        opacity: 0.7;
+                    }
+                    
+                    #button-Alterar-nome{
+                        top: 32.9%;
+                    }
+                    
+                    #button-Alterar-dataNasc{
+                        top: 42.3%;
+                    }
+                    
+                    #button-Alterar-email{
+                        top: 51.3%;
+                    }
+                    
+                    #button-Alterar-cpf{
+                        top: 60.6%;
+                    }
+                    
+                    #button-Alterar-id{
+                        top: 69.8%;
+                    }
+                    
+                    #button-Alterar-password{
+                        top: 79.3%;
+                    }
+                    
+                    .button-Sair{
+                        background-color: transparent;
+                        border: none;
+                        margin-top: 130%;
+                        font-size: 23px;
+                        text-align: center;
+                        color:var(--textoBotao);
+                        cursor: pointer;
+                    }
+                    
+                    #poweroff-icon{
+                        margin:0 0 0 30%;
+                    }
+                    
+                    .fa-solid{
+                        color: var(--textoBotao);
+                        font-size: 23px;
+                        cursor: pointer;
+                    }
